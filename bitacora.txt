@@ -6,4 +6,15 @@
 
  Paso   Acción                       Notas
 ====== ============================ ================================
-(25)					Se haría la fusión por fast-forward
+(25)						Se haría la fusión por fast-forward
+(27)	git tag RespuestaPreguntaFusion
+(28)	git push origin nomRama 		Se haría para cada rama que tengamos el respositorio
+						sustituyendo nomRama por el nombre de la rama remota
+						donde queremos subir cambios. Cuando realizamos
+						push a la rama master, nos sale un error diciendo 
+						que existen commits anteriores que no están incluidos
+						en nuestro repositorio local. Por tanto, realizamos
+						un pull, creando de esta forma un nuevo commit donde se 
+						integran los cambios de nuestro respositorio con los cambios
+						que no teniamos y que se han producido en el repositorio remoto
+						para esa rama. No surgen conflictos, git lo hace de manera automática.
