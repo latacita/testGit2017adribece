@@ -1,12 +1,24 @@
 ﻿%%==================================================================%%
 %%                 Métodos de Desarrollo - Test de Git              %%
 %%==================================================================%%
-%% Alumno (Apellidos, Nombre):                                      %%
+%% Alumno (Apellidos, Nombre): Becerril Crespo, Adrián              %%
 %%==================================================================%%
 
  Paso   Acción                       Notas
 ====== ============================ ================================
+(03)	git branch Historia000
+(04)	git branch Historia001
+(05)	git checkout Historia000
 (07)	git add bitacora.txt
 (08)	git commit -m "Paso 08"
 (09)	git checkout Historia001
+(11)	git checkout Historia000	Se produce un error, debido a que existen
+					cambios, concretamente en bitacora.txt, 
+					que podrían ser perdidos al cambiar de rama.
+					Por tanto git nos aconseja o bien realizar
+					un commit o bien mandar los cambios sin guardar
+					al stash. Como se nos dice en el enunciado 
+					que nos cambiemos de rama sin realizar un commit, 
+					aplicamos el proceso de mandar los cambios al
+					stash mediante un "git stash".
 (16)	git stash apply stash@{0}
