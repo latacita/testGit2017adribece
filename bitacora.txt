@@ -9,3 +9,12 @@
 (03)	git branch Historia000
 (04)	git branch Historia001
 (05)	git checkout Historia000
+(11)	git checkout Historia000	Se produce un error, debido a que existen
+					cambios, concretamente en bitacora.txt, 
+					que podrían ser perdidos al cambiar de rama.
+					Por tanto git nos aconseja o bien realizar
+					un commit o bien mandar los cambios sin guardar
+					al stash. Como se nos dice en el enunciado 
+					que nos cambiemos de rama sin realizar un commit, 
+					aplicamos el proceso de mandar los cambios al
+					stash mediante un "git stash".
