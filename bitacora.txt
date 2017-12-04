@@ -23,9 +23,9 @@
 						stash mediante un "git stash".
 (16)	git stash apply stash@{0}
 (20)	git merge Historia000			La fusión es realizada de manera recursiva originando
-						por tanto un nuevo commit donde se integran las dos
+						por tanto un nuevo commit donde las dos
 						ramas quedan integradas. Durante la fusión han surgido 
-						conflictos en el archivo bitcora.txt puesto que en ambas
+						conflictos en el archivo bitacora.txt puesto que en ambas
 						ramas se han modificado mismos trozos de código.
 (25)						Se haría la fusión por fast-forward
 (27)	git tag RespuestaPreguntaFusion
@@ -39,3 +39,14 @@
 						integran los cambios de nuestro respositorio con los cambios
 						que no teniamos y que se han producido en el repositorio remoto
 						para esa rama. No surgen conflictos, git lo hace de manera automática.
+(30)	git merge Historia001			La fusión es realizada de manera recursiva originando
+						por tanto un nuevo commit donde las dos
+						ramas quedan integradas. Durante la fusión han surgido 
+						conflictos en el archivo bitacora.txt puesto que en ambas
+						ramas se han modificado mismos trozos de código.
+
+
+
+
+
+
