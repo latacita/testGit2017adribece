@@ -22,3 +22,8 @@
 					aplicamos el proceso de mandar los cambios al
 					stash mediante un "git stash".
 (16)	git stash apply stash@{0}
+(20)	git merge Historia000		La fusión es realizada de manera recursiva originando
+					por tanto un nuevo commit donde se integran las dos
+					ramas quedan integradas. Durante la fusión han surgido 
+					conflictos en el archivo bitcora.txt puesto que en ambas
+					ramas se han modificado mismos trozos de código.
